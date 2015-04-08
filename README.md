@@ -1,4 +1,5 @@
-# djangobluemix
+djangobluemix
+
 Allows you to quickly deploy Django Python Apps To IBM Bluemix
 
 For manually pushingt this starter Django App to Bluemix
@@ -15,8 +16,13 @@ like postgresql-9.1 and bind it to your app.
 applications:
 - name: <your app name>
   memory: 256M
- This is command provided by cf -c option  
+# This is command provided by cf -c option  
   command: bash ./run.sh
+#  command: python manage.py syncdb --noinput; gunicorn MyFirstDjango.wsgi --workers 2 -b 0.0.0.0:$PORT
+#  command: python manage.py runserver $PORT
+#  command: python -c "import os; print os.getcwd()"
+#  New Buildpack: https://developer.ibm.com/answers/questions/8782/about-deploying-python-applications/?community=bluemix
+#  buildpack: https://github.com/ephoning/heroku-buildpack-python.git
   buildpack: https://github.com/cloudfoundry/python-buildpack
   path: .
   services:
@@ -26,3 +32,9 @@ applications:
 
 5.Push your app again using CF push.
 $cf push <your app name>
+
+
+For automating the deployment of this starter template Django Python Application to Bluemix. Click the deploy to Bluemix Button.
+
+
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=http://goo.gl/mXgcwK)
