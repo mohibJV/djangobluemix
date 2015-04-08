@@ -15,13 +15,8 @@ like postgresql-9.1 and bind it to your app.
 applications:
 - name: <your app name>
   memory: 256M
-# This is command provided by cf -c option  
+ This is command provided by cf -c option  
   command: bash ./run.sh
-#  command: python manage.py syncdb --noinput; gunicorn MyFirstDjango.wsgi --workers 2 -b 0.0.0.0:$PORT
-#  command: python manage.py runserver $PORT
-#  command: python -c "import os; print os.getcwd()"
-#  New Buildpack: https://developer.ibm.com/answers/questions/8782/about-deploying-python-applications/?community=bluemix
-#  buildpack: https://github.com/ephoning/heroku-buildpack-python.git
   buildpack: https://github.com/cloudfoundry/python-buildpack
   path: .
   services:
