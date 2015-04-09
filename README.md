@@ -16,3 +16,12 @@ $cf push <your app name>
 For automating the deployment of this starter template Django Python Application to Bluemix. Click the deploy to Bluemix Button.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](http://goo.gl/UWpUya)
+
+- It will initially fail because you haven't created your postgress database service. 
+- The error messages in the DevOps pipeline services shows you haven't created your postgresql-qc database service.
+- Create the postgress service. I used "postgresql-qc" as the name in the manifest file.  
+- Bind the service to your app in the blumix console.
+- Restart your app in Bluemix
+- Access the deployed app using the routesURL at the top of your app  routesURL/admin
+- Use admin for user id and password and start creating users.
+- Enjoy
