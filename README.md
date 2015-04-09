@@ -15,4 +15,4 @@ $cf push <your app name>
 
 For automating the deployment of this starter template Django Python Application to Bluemix. Click the deploy to Bluemix Button.
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/fe01134/djangobluemix.git)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](http://goo.gl/UWpUya)
