@@ -1,4 +1,4 @@
-djangobluemix
+<b>djangobluemix</b>
 
 Allows you to quickly deploy Django Python Apps To IBM Bluemix
 
@@ -17,7 +17,8 @@ For automating the deployment of this starter template Django Python Application
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](http://goo.gl/UWpUya)
 
-- It will initially fail because you haven't created your postgress database service. 
+<b>Directions</b>
+- The app will deploy however the initial application start will fail because you haven't created your postgress database service. 
 - The error messages in the DevOps pipeline services shows you haven't created your postgresql-qc database service.
 - Create the postgress service. I used "postgresql-qc" as the name in the manifest file.  
 - Bind the service to your app in the blumix console.
