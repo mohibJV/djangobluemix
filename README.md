@@ -2,7 +2,7 @@
 
 Allows you to quickly deploy Django Python Apps To IBM Bluemix
 
-For manually pushingt this starter Django App to Bluemix
+To manually push this starter Django App to Bluemix using CF
 
 - Modify the manifest with your file name. 
 - Push the app using CF Push so you can create a service to bind to $cf push <your app name> 
@@ -13,7 +13,7 @@ For manually pushingt this starter Django App to Bluemix
 $cf push <your app name>
 
 
-For automating the deployment of this starter template Django Python Application to Bluemix. Click the deploy to Bluemix Button.
+To automate the deployment of this starter template Django Python Application using Deploy to Bluemix. Click the deploy to Bluemix Button.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](http://goo.gl/UWpUya)
 
