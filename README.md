@@ -8,20 +8,22 @@ Allows you to quickly start building and deploying Django Python Apps To IBM Blu
 
 1. Create a Bluemix Account
 
-    [Sign up][sign_up] in Bluemix, or use an existing account. Watson Services in Beta are free to use.
+    [Sign up][sign_up] on Bluemix.net, or use an existing account. Runtimes are free to try for one month.
 
 2. Download and install the [Cloud-foundry CLI][cloud_foundry] tool
 
 3. Edit the `manifest.yml` file and change the `<application-name>` to something unique and modify the services name to reflect your own Postgres SQL database service instance on Bluemix after you create it.
-  ```none
-  applications:
-  - name: personality-insights-python
-    command: python server.py
-    path: .
-    memory: 256M
-    services:
-    - personality-insights-service
-  ```
+```none
+applications:
+- name: DeployDjangoBluemix
+memory: 256M
+# This is command provided by cf -c option
+command: bash ./run.sh
+buildpack: https://github.com/cloudfoundry/python-buildpack
+path: .
+services:
+- postgresql-qc
+```
 
     The name you use will determinate your application url initially, e.g. `<application-name>.mybluemix.net`.
 
@@ -74,4 +76,8 @@ To troubleshoot your Bluemix app the main useful source of information are the l
 ## Contributing
 
   See [CONTRIBUTING](CONTRIBUTING.md).
-
+  
+[service_url]: https://console.ng.bluemix.net/?ace_base=true#/store/cloudOEPaneId=store&orgGuid=0372034e-31d6-41b5-8843-819c07218821&spaceGuid=737c360d-c1c3-481f-923c-e7ee0b193c28&serviceOfferingGuid=7ca52cdd-ae04-4fac-b153-47f7805583e2&fromCatalog=true
+[cloud_foundry]: https://github.com/cloudfoundry/cli
+[getting_started]: https://console.ng.bluemix.net/solutions/web-applications
+[sign_up]: https://apps.admin.ibmcloud.com/manage/trial/bluemix.html
