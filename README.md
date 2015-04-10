@@ -52,10 +52,10 @@ Simply click on the deploy to bluemix button below to deploy this Django Python 
 
 <b>Directions</b>
 - Accept the default values for you the app location and name. 
-- The app will deploy however the initial application start will fail because you haven't created your postgress database service.  See steps above on how to create a db service.
+- The app will deploy however the initial application start will fail because you haven't created your postgress database service. 
 - The error messages in the DevOps pipeline services shows you haven't created your postgresql-qc database service.
 - Create the postgress service. I used "postgresql-qc" as the name in the manifest file.  
-- Bind the service to your app in the blumix console.
+- Bind the service to your app in the blumix dashboard  bluemix.net
 - Restart your app in Bluemix
 - Access the deployed app using the routesURL at the top of your app  routesURL/admin
 - Use admin for user id and password and start creating users.
