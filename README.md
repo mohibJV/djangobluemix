@@ -1,10 +1,10 @@
-##djangobluemix
+#djangobluemix
 
 Allows you to quickly start building and deploying Django Python Apps To IBM Bluemix.
 
 ##To manually push this starter Django App to Bluemix using CF
 
-# Getting Started
+### Getting Started
 
 1. Create a Bluemix Account
 
