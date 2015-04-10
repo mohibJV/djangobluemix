@@ -12,17 +12,17 @@ Allows you to quickly start building and deploying Django Python Apps To IBM Blu
 
 2. Download and install the [Cloud-foundry CLI][cloud_foundry] tool
 
-3. Edit the `manifest.yml` file and change the `<application-name>` to something unique and modify the services name to reflect your own Postgres SQL database service instance on Bluemix after you create it.
+3. Edit the `manifest.yml` file and change the `<application-name>` to something unique and modify the `<services-name>` to reflect your own Postgres SQL database service instance on Bluemix after you create it.
 ```none
 applications:
-- name: DeployDjangoBluemix
+- name: <application-name>
 memory: 256M
 # This is command provided by cf -c option
 command: bash ./run.sh
 buildpack: https://github.com/cloudfoundry/python-buildpack
 path: .
 services:
-- postgresql-qc
+- <services-name>
 ```
 
     The name you use will determinate your application url initially, e.g. `<application-name>.mybluemix.net`.
