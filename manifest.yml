@@ -10,5 +10,7 @@ applications:
 #  buildpack: https://github.com/ephoning/heroku-buildpack-python.git
   buildpack: https://github.com/cloudfoundry/python-buildpack
   path: .
-  services:
-  - postgresql-qc
+declared-services:
+  mypostgres:
+    label: postgresql
+    plan: 100
