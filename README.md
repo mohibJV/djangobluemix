@@ -27,6 +27,7 @@ label:postgresql
 plan:100
 services:
 - <services-name>
+
 ```
 
     The name you use will determinate your application url initially, e.g. `<application-name>.mybluemix.net`.
