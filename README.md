@@ -21,6 +21,10 @@ memory: 256M
 command: bash ./run.sh
 buildpack: https://github.com/cloudfoundry/python-buildpack
 path: .
+declared-services:
+<services-name>:
+label:postgresql
+plan:100
 services:
 - <services-name>
 ```
