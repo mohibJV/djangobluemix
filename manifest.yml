@@ -9,7 +9,7 @@ applications:
 #  New Buildpack: https://developer.ibm.com/answers/questions/8782/about-deploying-python-applications/?community=bluemix
 #  buildpack: https://github.com/ephoning/heroku-buildpack-python.git
 #  buildpack: https://github.com/cloudfoundry/python-buildpack  # Use to work doesn't now
-  python_buildpack
+  buildpack: python_buildpack
   path: .
 declared-services:
   mypostgres:
