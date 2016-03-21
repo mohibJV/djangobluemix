@@ -1,5 +1,5 @@
 applications:
-- name: DeployDjangoBluemix
+- name: DeployDjangoBluemixMohibTest
   memory: 256M
 # This is command provided by cf -c option  
   command: bash ./run.sh
