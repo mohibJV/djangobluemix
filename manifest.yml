@@ -12,8 +12,8 @@ applications:
   buildpack: python_buildpack
   path: .
 declared-services:
-  mypostgres:
+  mohibsmypostgres:
     label: postgresql
     plan: 100
 services:
-  - mypostgres
+  - mohibsmypostgres
